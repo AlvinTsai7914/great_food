@@ -105,5 +105,29 @@ img {
 
 .visual_2{ background:#545454;  text-align: center; color: #fff; padding: 20px; margin-left: -15px; margin-right: -15px;}
 .visual_2 .inner{ border:3px solid #ffb62e; border-radius: 12px; }
+.visual_2 .inner p{ font-size: 21px;}
 .visual_2 ul{ max-width: 80%; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: center; align-self: center;}
-.visual_2 ul li{width: 28%; margin:2%; border:3px solid #fff; border-radius: 12px; padding: 15px;}
+
+.visual_2 ul li{width: 28%; margin:2%; border:5px solid #fff; border-radius: 12px; padding: 15px;
+
+          border-image: linear-gradient(to bottom right, #ec78ab 0%, #007ec7 50%, #e61264 100%);
+          border-image-slice: 1;
+          position: relative;
+}
+
+
+/* #e0b990 */
+/* 食用方法 */
+.cook{ background: #e0b990; padding: 8%; margin-left: -15px; margin-right: -15px;}
+.cook .title{ color: #fff; text-align: center; margin-bottom: 50px;}
+.cook .title::before,.cook .title::after{ content: ''; width: 80px; height: 2px; background: #000; display: inline-block; vertical-align: middle;}
+.cook .title::before{ margin-right: 12px;}
+.cook .title::after{ margin-left: 12px;}
+.cook .subtitle{ display: block; width: 60%;margin: 0 auto; color: #fff; font-size: 2.5rem; text-align: center; background: #7bc8c3; padding: 12px 24px; border-radius: 50px;  position: relative;  z-index: 1;}
+.cook ul{ display: flex; flex-wrap: wrap;  border-radius: 100px; border: 10px solid #fff; list-style: none; padding: 5% 8%; margin-top: -50px;}
+.cook li{ width: 50%; padding: 2% 5%;}
+.cook li img{ margin-bottom: 20px;}
+.cook li h4{ color: #666; font-size: 1.8rem; margin-bottom: 20px;}
+.cook li h4 span{ display: inline-block; width: 44px;height: 44px;text-align: center; border: 5px solid #666; border-radius: 50%; margin-right: 15px;}
+.cook li p{ color: #fff; font-size: 1.2rem;}
+
