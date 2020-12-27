@@ -131,3 +131,9 @@ img {
 .cook li h4 span{ display: inline-block; width: 44px;height: 44px;text-align: center; border: 5px solid #666; border-radius: 50%; margin-right: 15px;}
 .cook li p{ color: #fff; font-size: 1.2rem;}
 
+/* vegetable */
+.vegetable{}
+.vegetable .pic{ text-align: center;}
+.vegetable .title{ border-left: 15px solid gold; padding-left: 12px; margin-bottom: 12px;}
+.vegetable .content{ font-size: 21px;}
+
