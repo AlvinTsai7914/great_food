@@ -103,16 +103,29 @@ img {
 .sub_title_2{ background:#e24242; color:#fff; text-align: center; font-size: 2rem;  padding:20px; margin-left: -15px; margin-right: -15px;}
 .sub_title_2 h2{ color:#fff;  font-size: 4rem; font-weight: 700;}
 
-.visual_2{ background:#545454;  text-align: center; color: #fff; padding: 20px; margin-left: -15px; margin-right: -15px;}
+.visual_2{ background:url('https://img.1shop.tw/1781/2020-12-28-22-10-59_1200_1781.png') no-repeat;  text-align: center; color: #fff; padding: 30px; margin-left: -15px; margin-right: -15px;}
 .visual_2 .inner{ border:3px solid #ffb62e; border-radius: 12px; }
-.visual_2 .inner p{ font-size: 21px;}
-.visual_2 ul{ max-width: 80%; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: center; align-self: center;}
+.visual_2  h3{ font-size: 2rem; line-height: 2; color: #fff; font-weight: bold; }
+.visual_2  h3 span{position: relative; z-index: 1;}
+.visual_2  h3 span::after{ content: ''; display: inline-block; width:100%; height: 10px; border-radius: 10px; background-color:#e24242 ; position: absolute; left: 50%;bottom: 0px; transform: translateX(-50%); z-index: -1;}
+.visual_2 .inner p{ font-size: 21px; line-height: 1.5; color: #fff;}
+.visual_2 h5{ font-weight: bold;  font-size: 1.8rem;}
+.visual_2 ul{ width: 80%; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: center; align-self: center; list-style: none;}
 
 .visual_2 ul li{width: 28%; margin:2%; border:5px solid #fff; border-radius: 12px; padding: 15px;
-
           border-image: linear-gradient(to bottom right, #ec78ab 0%, #007ec7 50%, #e61264 100%);
           border-image-slice: 1;
           position: relative;
+          font-size: 21px;
+}
+
+@media (max-width: 767px) {
+  .visual_2  h3 span{ display: inline-block; line-height: 1.2;}
+  .visual_2  h3 span::after{ display: none;}
+  .visual_2 .inner p{ font-size: 18px; padding: 0 15px;}
+  .visual_2 h5{ font-size: 1.2rem; }
+  .visual_2 ul{ padding-left: 0px; width: 100%;}
+  .visual_2 ul li{ font-size: 0.9rem; white-space: nowrap; padding: 12px 5px;}
 }
 
 
@@ -137,3 +150,7 @@ img {
 .vegetable .title{ border-left: 15px solid gold; padding-left: 12px; margin-bottom: 12px;}
 .vegetable .content{ font-size: 21px;}
 
+@media (max-width: 767px) {
+  .sub_title_2 h2{font-size: 2.2rem;}
+  .vegetable .content{font-size: 18px;}
+}
